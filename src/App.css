@@ -1,0 +1,13 @@
+:root {
+  --sand-color: #eecf9d;
+  --butter-color: #fcfcfc;
+  --blue-color: #516e86;
+  --darkblue-color: #858c8d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
