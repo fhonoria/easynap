@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { BsMoonStarsFill } from "react-icons/bs";
 import {
   Nav,
   NavbarContainer,
@@ -15,7 +16,10 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">EasyNap</NavLogo>
+          <NavLogo to="/">
+            <BsMoonStarsFill />
+            EasyNap
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
