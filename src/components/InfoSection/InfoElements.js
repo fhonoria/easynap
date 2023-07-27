@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #516e86;
+  color: var(--blue-color);
   background: ${({ whiteBg }) =>
     whiteBg ? "var(--butter-color)" : "var(--sand-color)"};
 
