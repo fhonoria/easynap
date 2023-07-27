@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #fcfcfc;
+  background: var(--butter-color);
   display: flex;
   justify-content: center;
   align-elements: center;
@@ -10,9 +10,24 @@ export const HeroContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
-`;
 
-/*Add: before styled*/
+  /*:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+
+    z-index: 2;
+  }*/
+`;
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -30,7 +45,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #fcfcfc;
+  background: var(--butter-color);
 `;
 
 export const HeroContent = styled.div`
@@ -44,7 +59,7 @@ export const HeroContent = styled.div`
 `;
 export const HeroH1 = styled.h1`
   margin-top: 150px;
-  color: #878f8d;
+  color: var(--darkblue-color);
   font-size: 28px;
   text-align: center;
 
@@ -57,7 +72,7 @@ export const HeroH1 = styled.h1`
 `;
 export const HeroP = styled.p`
   margin-top: 8px;
-  color: #516e86;
+  color: var(--blue-color);
   font-size: 48px;
   text-align: center;
   max-width: 600px;

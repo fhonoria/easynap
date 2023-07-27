@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #516e86;
-  background: ${({ whiteBg }) => (whiteBg ? "#fff" : "#ecc4a0")};
+  background: ${({ whiteBg }) =>
+    whiteBg ? "var(--butter-color)" : "var(--sand-color)"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -52,7 +53,8 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   text-transform: uppercase;
-  color: ${({ lightText }) => (lightText ? "#fcfcfc" : "#eec4a0")};
+  color: ${({ lightText }) =>
+    lightText ? "var(--butter-color)" : "var(--sand-color)"};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -63,7 +65,8 @@ export const InfoP = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightText }) => (lightText ? "#fcfcfc" : "#eec4a0")};
+  color: ${({ lightText }) =>
+    lightText ? "var(--butter-color)" : "var(--sand-color)"};
 `;
 export const BtnWrap = styled.div`
   display: flex;
