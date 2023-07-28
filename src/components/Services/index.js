@@ -1,8 +1,8 @@
 import React from "react";
-import Img1 from "../../images/img1.jpg";
-import Img2 from "../../images/img1.jpg";
-import Img3 from "../../images/img1.jpg";
-import Img4 from "../../images/img1.jpg";
+import Icon1 from "../../images/undraw_pregnant.svg";
+import Icon2 from "../../images/undraw_time.svg";
+import Icon3 from "../../images/undraw_baby.svg";
+import Icon4 from "../../images/undraw_support.svg";
 import {
   ServicesContainer,
   ServicesH1,
@@ -17,26 +17,26 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>Services</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
-            <ServicesImg src={Img1} />
-            <ServicesH2>Title</ServicesH2>
+            <ServicesImg src={Icon1} />
+            <ServicesH2>Pregnany package</ServicesH2>
             <ServicesP>Text</ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesImg src={Img2} />
-            <ServicesH2>Title</ServicesH2>
+            <ServicesImg src={Icon2} />
+            <ServicesH2>Routines</ServicesH2>
             <ServicesP>Text</ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesImg src={Img3} />
-            <ServicesH2>Title</ServicesH2>
+            <ServicesImg src={Icon3} />
+            <ServicesH2>1 week consultation</ServicesH2>
             <ServicesP>Text</ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesImg src={Img4} />
-            <ServicesH2>Title</ServicesH2>
+            <ServicesImg src={Icon4} />
+            <ServicesH2>Full support</ServicesH2>
             <ServicesP>Text</ServicesP>
           </ServicesCard>
         </ServicesWrapper>

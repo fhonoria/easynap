@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--sand-color);
+  background: var(--grey-color);
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -60,7 +60,7 @@ export const ServicesImg = styled.img`
 export const ServicesH1 = styled.h1`
   text-transform: uppercase;
   font-size: 48px;
-  color: var(--butter-color);
+  color: var(--blue-color);
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -71,10 +71,10 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
   font-size: 16px;
   margin-bottom: 10px;
-  color: var(--darkblue-color);
+  color: var(--blue-color);
 `;
 export const ServicesP = styled.p`
   font-size: 16px;
   text-align: center;
-  color: var(--blue-color);
+  color: var(--darkblue-color);
 `;

@@ -74,6 +74,7 @@ export const HeroP = styled.p`
   margin-top: 8px;
   color: var(--blue-color);
   font-size: 48px;
+  font-weight: 600;
   text-align: center;
   max-width: 600px;
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   color: var(--blue-color);
   background: ${({ whiteBg }) =>
-    whiteBg ? "var(--butter-color)" : "var(--sand-color)"};
+    whiteBg ? "var(--butter-color)" : "var(--rosa-color)"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -53,8 +53,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   text-transform: uppercase;
-  color: ${({ lightText }) =>
-    lightText ? "var(--butter-color)" : "var(--sand-color)"};
+  color: var(--blue-color);
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -65,8 +64,7 @@ export const InfoP = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightText }) =>
-    lightText ? "var(--butter-color)" : "var(--sand-color)"};
+  color: var(--darkblue-color);
 `;
 export const BtnWrap = styled.div`
   display: flex;

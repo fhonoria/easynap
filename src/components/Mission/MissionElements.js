@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const MissionContainer = styled.div`
-  color: var(--sand-color);
+  color: var(--blue-color);
   background: var(--butter-color);
 `;
 
 export const MissionWrapper = styled.div`
   display: block;
-  height: 200px;
+  height: 400px;
+  width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 50px;
 `;
 
 export const MissionH1 = styled.h1`
