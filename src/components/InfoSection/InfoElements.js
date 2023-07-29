@@ -63,7 +63,7 @@ export const InfoP = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 32px;
   color: var(--darkblue-color);
 `;
 export const BtnWrap = styled.div`

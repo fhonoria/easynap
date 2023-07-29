@@ -7,7 +7,7 @@ export const MissionContainer = styled.div`
 
 export const MissionWrapper = styled.div`
   display: block;
-  height: 400px;
+  height: 500px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -26,8 +26,7 @@ export const MissionH1 = styled.h1`
 `;
 
 export const MissionP = styled.p`
-  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 32px;
 `;
