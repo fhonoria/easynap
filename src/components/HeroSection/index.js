@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Text } from "../../containers/LanguageProvider";
 import Video from "../../video/video.mp4";
 import {
   HeroContainer,
@@ -27,8 +28,12 @@ const HeroSection = () => {
           <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
         </HeroBg>
         <HeroContent>
-          <HeroH1>Baby Sleep Consulting</HeroH1>
-          <HeroP>Helping families get the sleep they deserve</HeroP>
+          <HeroH1>
+            <Text tid="hero-header" />
+          </HeroH1>
+          <HeroP>
+            <Text tid="hero-p" />
+          </HeroP>
           <HeroBtnWrapper>
             <Button
               to="services"
@@ -37,7 +42,8 @@ const HeroSection = () => {
               primary="true"
               dark="true"
             >
-              Learn more {hover ? <ArrowForward /> : <ArrowRight />}
+              <Text tid="hero-button" />
+              {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>
