@@ -8,6 +8,8 @@ import {
   TextWrapper,
   Heading,
   InfoP,
+  InfoList,
+  InfoListItems,
   BtnWrap,
   Column2,
   ImgWrap,
@@ -21,11 +23,18 @@ const InfoSection = ({
   lightText,
   headLine,
   description,
+
   buttonLabel,
   img,
   alt,
   primary,
   dark,
+  list1,
+  list2,
+  list3,
+  list4,
+  list5,
+  withList,
 }) => {
   return (
     <>
@@ -36,6 +45,16 @@ const InfoSection = ({
               <TextWrapper>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <InfoP lightText={lightText}>{description}</InfoP>
+                <InfoList withList={withList}>
+                  <InfoListItems>{list1}</InfoListItems>
+                  <InfoListItems>{list2}</InfoListItems>
+                  <InfoListItems>{list3}</InfoListItems>
+                  <InfoListItems>{list4}</InfoListItems>
+                  <InfoListItems>{list5}</InfoListItems>
+                </InfoList>
+                <InfoList>
+                  <InfoListItems>Copy copy</InfoListItems>
+                </InfoList>
                 <BtnWrap>
                   <Button
                     to="home"

@@ -66,6 +66,20 @@ export const InfoP = styled.p`
   line-height: 32px;
   color: var(--darkblue-color);
 `;
+
+export const InfoList = styled.ul`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--darkblue-color);
+  display: ${({ withList }) => (withList ? "block" : "none")};
+`;
+
+export const InfoListItems = styled.li`
+  margin-left: 20px;
+`;
+
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -79,4 +93,5 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 20px;
 `;
