@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 16px;
   position: sticky;
-  top: 0;
+
   z-index: 10;
 
   @media screen and (max-width: 960px) {
@@ -83,5 +83,13 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     border-bottom: 3px solid var(--blue-color);
+  }
+`;
+
+export const LanguageSelectorWrapper = styled.div`
+  margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 80px;
   }
 `;

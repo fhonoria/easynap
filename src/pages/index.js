@@ -13,6 +13,7 @@ import {
 import Services from "../components/Services";
 import Mission from "../components/Mission";
 import Footer from "../components/Footer";
+import { LanguageProvider } from "../containers/LanguageProvider";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,17 +24,20 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <HeroSection />
-      <Mission />
-      <InfoSection {...infoProblems} />
-      <InfoSection {...infoProcess} />
-      <InfoSection {...infoResult} />
-      <Services />
-      <InfoSection {...infoAbout} />
-      <InfoSection {...infoContact} />
-      <Footer />
+      <LanguageProvider>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
+
+        <HeroSection />
+        <Mission />
+        <InfoSection {...infoProblems} />
+        <InfoSection {...infoProcess} />
+        <InfoSection {...infoResult} />
+        <Services />
+        <InfoSection {...infoAbout} />
+        <InfoSection {...infoContact} />
+        <Footer />
+      </LanguageProvider>
     </>
   );
 };

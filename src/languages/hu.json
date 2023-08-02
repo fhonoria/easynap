@@ -1,5 +1,6 @@
 {
   "hero-header": "Baba Alvástanácsadás",
+
   "hero-p": "Családoknak segíteni, hogy visszakapják a megérdemelt alvást",
   "hero-button": "Tudj meg többet",
   "mission-header": "A célom",
@@ -45,4 +46,5 @@
   "contact-header": "Lépj velem kapcsolatba",
   "contact-text": "Ha nem vagy biztos abban, hogy melyik csomag felel meg a legjobban igényeidnek, foglalj egy ingyenes info-hívást.",
   "contact-button": "Info-hívás foglalása"
+
 }

@@ -9,7 +9,9 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  LanguageSelectorWrapper,
 } from "./NavbarElements";
+import LanguageSelector from "../LanguageSelector";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -35,6 +37,9 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
         </NavbarContainer>
+        <LanguageSelectorWrapper>
+          <LanguageSelector />
+        </LanguageSelectorWrapper>
       </Nav>
     </>
   );
