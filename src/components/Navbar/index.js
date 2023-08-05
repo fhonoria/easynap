@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import { BsMoonStarsFill } from "react-icons/bs";
+import { Text } from "../../containers/LanguageProvider";
 import {
   Nav,
   NavbarContainer,
@@ -27,13 +28,37 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+              >
+                <Text tid="info-about" />
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+              >
+                <Text tid="services-header" />
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+              >
+                <Text tid="contact-header" />
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

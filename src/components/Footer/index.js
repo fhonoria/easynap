@@ -2,6 +2,8 @@ import React from "react";
 import { BsMoonStarsFill, BsTelephone } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { Text } from "../../containers/LanguageProvider";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
@@ -18,6 +20,10 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <FooterContainer>
@@ -25,15 +31,21 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLink to="/about">About</FooterLink>
-                <FooterLink to="/packages">Packages</FooterLink>
+                <FooterLink to="/about">
+                  <Text tid="info-about" />
+                </FooterLink>
+                <FooterLink to="/packages">
+                  <Text tid="services-header" />
+                </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLink to="/discovery">Discovery call</FooterLink>
+                <FooterLink to="/discovery">
+                  <Text tid="footer-discovery" />
+                </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLink to="/impressum">Impressum</FooterLink>
-                <FooterLink to="/">Term and conditions</FooterLink>
+                <FooterLink to="/">Terms and conditions</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLink to="/">Privacy Policy</FooterLink>
@@ -43,7 +55,7 @@ const Footer = () => {
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/">
+              <SocialLogo to="/" onClick={toggleHome}>
                 <BsMoonStarsFill />
                 EasyNap
               </SocialLogo>
