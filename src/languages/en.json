@@ -38,13 +38,13 @@
   "info-button": "Learn more",
   "packages-routines": "Routines",
   "packages-pregnancy-description": "A full package that gives you a nice method in your hand that you can apply from day 1 until 3 years old. It shows you how to teach your baby sleep from day 1 in the most loving way.",
-  "packages-pregnancy-lis1": "Settling methods",
-  "packages-pregnancy-lis2": "New Born Guide",
-  "packages-pregnancy-lis3": "Routine from 16 weeks till 3 years",
+  "packages-includes": "It includes:",
+  "packages-pregnancy-list1": "Settling methods",
+  "packages-pregnancy-list2": "New Born Guide",
+  "packages-pregnancy-list3": "Routine from 16 weeks till 3 years",
   "packages-button": "Book it",
   "packages-consulting": "Consultations",
   "contact-header": "Contact",
   "contact-text": "If you are uncertain which package fits your needs the best, book a free discovery call.",
   "contact-button": "Book your free discovery call"
-
 }

@@ -2,6 +2,7 @@ import React from "react";
 import ImgMe from "../../images/me.jpg";
 import { ImgWrap } from "../InfoSection/InfoElements";
 import { Button } from "../ButtonElements";
+import { Text } from "../../containers/LanguageProvider";
 import {
   Container,
   Heading,
@@ -18,7 +19,9 @@ const About = () => {
   return (
     <>
       <Container>
-        <Heading>About</Heading>
+        <Heading>
+          <Text tid="info-about" />
+        </Heading>
         <AboutWrapper>
           <AboutRow>
             <AboutColumn1>
@@ -28,18 +31,13 @@ const About = () => {
             </AboutColumn1>
             <AboutColumn2>
               <AboutDesc>
-                At EasyNap, my mission is to help families get the sleep they
-                deserve. I believe that every family is unique and there is no
-                one-size-fits-all solution to sleep problems. That's why I
-                provide personalized sleep consulting services to help families
-                establish healthy sleep habits for their babies. I am a
-                certified baby sleep consultant, with years of experience and
-                training in sleep consulting and I am dedicated to helping
-                families achieve their sleep goals.
+                <Text tid="info-text" />
               </AboutDesc>
               <AboutDesc>2 kids blablabla</AboutDesc>
               <BtnWrap>
-                <Button>Book a consult with me</Button>
+                <Button>
+                  <Text tid="info-button" />
+                </Button>
               </BtnWrap>
             </AboutColumn2>
           </AboutRow>

@@ -38,13 +38,18 @@
   "info-button": "Tudj meg többet",
   "packages-routines": "Napirendek",
   "packages-pregnancy-description": "Egy teljes csomag, amely egy csodálatos módszert ad a kezedbe, melyet az 1. naptól 3 éves korig alkalmazhatsz. Megmutatja, hogyan tanítsd meg babádat aludni az 1. naptól kezdve a legszeretetteljesebb módon.",
-  "packages-pregnancy-lis1": "Altatási módik",
-  "packages-pregnancy-lis2": "Újszülött napirend`",
-  "packages-pregnancy-lis3": "Napirend 16 hetes kortól 3 éves korig",
+  "packages-includes": "Tartalmaz:",
+  "packages-pregnancy-list1": "Altatási módik",
+  "packages-pregnancy-list2": "Újszülött napirend`",
+  "packages-pregnancy-list3": "Napirend 16 hetes kortól 3 éves korig",
   "packages-button": "Foglald le",
   "packages-consulting": "Konzultációk",
   "contact-header": "Lépj velem kapcsolatba",
   "contact-text": "Ha nem vagy biztos abban, hogy melyik csomag felel meg a legjobban igényeidnek, foglalj egy ingyenes info-hívást.",
-  "contact-button": "Info-hívás foglalása"
-
+  "contact-button": "Info-hívás foglalása",
+  "footer-discovery": "Info hívás",
+  "footer-impressum": "Impressum",
+  "footer-term": "Terms and conditions",
+  "footer-privacy": "Privacy Policy",
+  "footer-cookie": "Cookie Policy (EU)"
 }

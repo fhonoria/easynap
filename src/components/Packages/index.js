@@ -6,6 +6,7 @@ import Icon4 from "../../images/undraw_support.svg";
 import Icon5 from "../../images/undraw_appreciation.svg";
 import Icon6 from "../../images/undraw_support2.svg";
 import { Button } from "../ButtonElements";
+import { Text } from "../../containers/LanguageProvider";
 import {
   Container,
   PackagesWrapper,
@@ -26,24 +27,34 @@ const Packages = (primary, dark) => {
   return (
     <>
       <Container>
-        <Heading>Guides</Heading>
+        <Heading>
+          <Text tid="packages-routines" />
+        </Heading>
         <PackagesWrapper>
           <PackRow>
             <PackColumn1>
-              <PackTitle>Pregnancy Guide</PackTitle>
+              <PackTitle>
+                <Text tid="services-pregnancy" />
+              </PackTitle>
               <Img src={Icon1} alt="pregnant"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -52,25 +63,33 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn1>
             <PackColumn2>
-              <PackTitle>New Born Guide</PackTitle>
+              <PackTitle>
+                <Text tid="services-newborn" />
+              </PackTitle>
               <Img src={Icon3} alt="baby"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -79,25 +98,33 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn2>
             <PackColumn3>
-              <PackTitle>All Ages Routine</PackTitle>
+              <PackTitle>
+                <Text tid="services-routine" />
+              </PackTitle>
               <Img src={Icon2} alt="baby"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -106,30 +133,40 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn3>
           </PackRow>
         </PackagesWrapper>
-        <Heading>Consultations</Heading>
+        <Heading>
+          <Text tid="packages-consulting" />
+        </Heading>
         <PackagesWrapper>
           <PackRow>
             <PackColumn1>
-              <PackTitle>1 time consultation</PackTitle>
+              <PackTitle>
+                <Text tid="services-onetime" />
+              </PackTitle>
               <Img src={Icon4} alt="pregnant"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -138,25 +175,33 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn1>
             <PackColumn2>
-              <PackTitle>Full support package</PackTitle>
+              <PackTitle>
+                <Text tid="services-fullsupport" />
+              </PackTitle>
               <Img src={Icon5} alt="pregnant"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -165,25 +210,33 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn2>
             <PackColumn3>
-              <PackTitle>Ultimate support package</PackTitle>
+              <PackTitle>
+                <Text tid="services-ultimatesupport" />
+              </PackTitle>
               <Img src={Icon6} alt="pregnant"></Img>
               <PackDesc>
-                A full package that gives you a nice method in your hand that
-                you can apply from day 1 until 3 years old. It shows you how to
-                teach your baby sleep from day 1 in the most loving way.
+                <Text tid="packages-pregnancy-description" />
                 <br />
                 <br />
-                <strong>It includes:</strong>
+                <strong>
+                  <Text tid="packages-includes" />
+                </strong>
               </PackDesc>
               <PackListWrapper>
-                <PackList>Settling methods</PackList>
-                <PackList>New Born Routine</PackList>
-                <PackList>Routine from 16weeks till 3 years</PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list1" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list2" />
+                </PackList>
+                <PackList>
+                  <Text tid="packages-pregnancy-list3" />
+                </PackList>
               </PackListWrapper>
               <BtnWrap>
                 <Button
@@ -192,7 +245,7 @@ const Packages = (primary, dark) => {
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                 >
-                  Book it
+                  <Text tid="packages-button" />
                 </Button>
               </BtnWrap>
             </PackColumn3>
