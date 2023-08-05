@@ -40,10 +40,10 @@ const InfoSection = ({
     <>
       <InfoContainer whiteBg={whiteBg} id={id}>
         <InfoWrapper>
+          <Heading lightText={lightText}>{headLine}</Heading>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Heading lightText={lightText}>{headLine}</Heading>
                 <InfoP lightText={lightText}>{description}</InfoP>
                 <InfoList withList={withList}>
                   <InfoListItems>{list1}</InfoListItems>

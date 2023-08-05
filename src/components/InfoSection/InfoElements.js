@@ -19,6 +19,24 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+  align-content: space-evenly;
+`;
+
+export const Heading = styled.h1`
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--blue-color);
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
 `;
 export const InfoRow = styled.div`
   display: grid;
@@ -28,8 +46,7 @@ export const InfoRow = styled.div`
     imgStart ? `"col2 col1"` : `"col1 col2"`};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `"col 1" "col2"` : `"col1 col1" "col2 col2"`};
+    grid-template-areas: "col2" "col1";
   }
 `;
 export const Column1 = styled.div`
@@ -47,20 +64,8 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `;
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--blue-color);
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
-`;
 export const InfoP = styled.p`
-  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 32px;
@@ -68,7 +73,6 @@ export const InfoP = styled.p`
 `;
 
 export const InfoList = styled.ul`
-  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 32px;
@@ -83,6 +87,10 @@ export const InfoListItems = styled.li`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgWrap = styled.div`
@@ -94,4 +102,11 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
   border-radius: 20px;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 `;

@@ -8,7 +8,7 @@ export const MissionContainer = styled.div`
 export const MissionWrapper = styled.div`
   display: block;
   height: 500px;
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
