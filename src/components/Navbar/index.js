@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { Text } from "../../containers/LanguageProvider";
@@ -15,9 +15,22 @@ import {
 import LanguageSelector from "../LanguageSelector";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  });
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/">
             <BsMoonStarsFill />
@@ -29,17 +42,6 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-              >
-                <Text tid="info-about" />
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
                 to="services"
                 smooth={true}
                 duration={500}
@@ -47,6 +49,17 @@ const Navbar = ({ toggle }) => {
                 exact="true"
               >
                 <Text tid="services-header" />
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+              >
+                <Text tid="info-about" />
               </NavLinks>
             </NavItem>
             <NavItem>
