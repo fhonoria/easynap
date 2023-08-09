@@ -46,5 +46,10 @@
   "packages-consulting": "Consultations",
   "contact-header": "Contact",
   "contact-text": "If you are uncertain which package fits your needs the best, book a free discovery call.",
-  "contact-button": "Book your free discovery call"
+  "contact-button": "Book your free discovery call",
+  "footer-discovery": "Discovery Call",
+  "footer-impressum": "Impressum",
+  "footer-term": "Terms and conditions",
+  "footer-privacy": "Privacy Policy",
+  "footer-cookie": "Cookie Policy (EU)"
 }

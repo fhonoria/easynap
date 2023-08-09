@@ -1,48 +1,41 @@
 import React from "react";
 import ImgMe from "../../images/me.jpg";
-import { ImgWrap } from "../InfoSection/InfoElements";
-import { Button } from "../ButtonElements";
 import { Text } from "../../containers/LanguageProvider";
 import {
-  Container,
-  Heading,
+  AboutContainer,
+  AboutHeading,
   AboutWrapper,
   AboutRow,
   AboutColumn1,
   AboutColumn2,
-  Img,
+  AboutImg,
+  AboutImgWrap,
   AboutDesc,
-  BtnWrap,
 } from "./AboutElements";
 
 const About = () => {
   return (
     <>
-      <Container>
-        <Heading>
+      <AboutContainer>
+        <AboutHeading>
           <Text tid="info-about" />
-        </Heading>
+        </AboutHeading>
         <AboutWrapper>
           <AboutRow>
             <AboutColumn1>
-              <ImgWrap>
-                <Img src={ImgMe} alt="Honoria" />
-              </ImgWrap>
+              <AboutImgWrap>
+                <AboutImg src={ImgMe} alt="Honoria" />
+              </AboutImgWrap>
             </AboutColumn1>
             <AboutColumn2>
               <AboutDesc>
                 <Text tid="info-text" />
               </AboutDesc>
               <AboutDesc>2 kids blablabla</AboutDesc>
-              <BtnWrap>
-                <Button>
-                  <Text tid="info-button" />
-                </Button>
-              </BtnWrap>
             </AboutColumn2>
           </AboutRow>
         </AboutWrapper>
-      </Container>
+      </AboutContainer>
     </>
   );
 };

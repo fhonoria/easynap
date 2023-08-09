@@ -8,7 +8,7 @@ export const infoAbout = {
   description: <Text tid="info-text" />,
   buttonLabel: <Text tid="info-button" />,
   imgStart: true,
-  img: require("../../images/me.jpg"),
+  img: require("../../images/pexels-kristina-paukshtite-3242264.jpg"),
   alt: "Honoria",
   dark: false,
   primary: false,
@@ -88,3 +88,5 @@ export const infoResult = {
   primary: false,
   withList: true,
 };
+
+

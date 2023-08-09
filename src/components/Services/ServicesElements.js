@@ -9,11 +9,7 @@ export const ServicesContainer = styled.div`
   background: var(--grey-color);
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 1300px;
+    height: 1600px;
   }
 `;
 
