@@ -7,13 +7,13 @@ import {
   infoAbout,
   infoContact,
   infoProblems,
-  infoProcess,
-  infoResult,
 } from "../components/InfoSection/Data";
 import Services from "../components/Services";
 import Mission from "../components/Mission";
 import Footer from "../components/Footer";
 import { LanguageProvider } from "../containers/LanguageProvider";
+import Process from "../components/Process";
+import Result from "../components/Result";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +27,11 @@ const Home = () => {
       <LanguageProvider>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
-
         <HeroSection />
         <Mission />
         <InfoSection {...infoProblems} />
-        <InfoSection {...infoProcess} />
-        <InfoSection {...infoResult} />
+        <Process />
+        <Result />
         <Services />
         <InfoSection {...infoAbout} />
         <InfoSection {...infoContact} />
