@@ -4,6 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 export const FooterContainer = styled.footer`
   background-color: var(--butter-color);
 `;
+
 export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
@@ -41,7 +42,7 @@ export const FooterLinkItems = styled.div`
   box-sizing: border-box;
   color: var(--blue-color);
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 820px) {
     margin: 0;
     padding: 10px;
     width: 100%;
